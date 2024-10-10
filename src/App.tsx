@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1>JW MUSIC</h1>
+      <h1>TM Worship</h1>
     </div>
   );
 }
