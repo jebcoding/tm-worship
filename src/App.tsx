@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import './App.css';
 
 const title = {
@@ -7,7 +10,13 @@ const title = {
 };
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000});
+  }, []);
+
   return (
+    
+<div data-aos="flip-up">
     <div className='container'>
        <img 
         src={title.img}  
@@ -20,6 +29,7 @@ function App() {
         className='w-[100px] h-[150px] relative left-[8vh]'
         id='music_icon'
       />
+    </div>
     </div>
     );
 }
