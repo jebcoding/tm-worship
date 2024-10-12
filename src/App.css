@@ -35,22 +35,24 @@
     font-size: 14px;
   }
   .container {
-    position: relative;
-    right: 40px;
+    right: 20px;
   }
   #tmlogo {
     width: 100px;
     height: 100px;
-    position: relative;
 
   }
   #worship {
     font-size: 35px;
-    position: relative;
     top: -5px;
-    left: 10px;
+    left: 15qpx;
   }
-  
+  #music_icon {
+    width: 40px;
+    height: 50px;
+    bottom: 10px;
+    left: 20px;
+  }
 }
 
 @keyframes logo-spin {
