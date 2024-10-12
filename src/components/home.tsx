@@ -3,6 +3,7 @@ import '../App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 function Home() {
     useEffect(() => {
       AOS.init({ duration: 1000 });
