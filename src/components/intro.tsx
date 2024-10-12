@@ -9,7 +9,7 @@ function Intro() {
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
-    const timer = setTimeout(() => navigate('/home'), 1000);
+    const timer = setTimeout(() => navigate('/home'), 3000);
     return () => clearTimeout(timer);
   }, [navigate]);
 
