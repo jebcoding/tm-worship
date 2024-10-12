@@ -18,6 +18,41 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.container {
+  display: flex;
+  position: relative;
+  right: 100px;
+}
+#worship {
+  font-size: 85px;
+  position: relative;
+  left: 5vh;
+  top: 5vh;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    position: relative;
+    right: 40px;
+  }
+  #tmlogo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+  }
+  #worship {
+    font-size: 35px;
+    position: relative;
+    top: -5px;
+    left: 10px;
+  }
+  
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
