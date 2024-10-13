@@ -4,21 +4,25 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
 
-
 function Intro() {
   const navigate = useNavigate();
   const [showSecondScreen, setShowSecondScreen] = useState(false);
 
   useEffect(() => {
+    // Initialize AOS once.
     AOS.init({ duration: 2000 });
+    AOS.refresh(); 
 
-    const timer = setTimeout(() => setShowSecondScreen(true), 2000);
-    const nextPage = setTimeout(() => navigate('/home'), 3000);
+    // Set a single timer to manage both the second screen and navigation.
+    const timer = setTimeout(() => {
+      setShowSecondScreen(true); // Show the second screen after 3s.
 
-    return () => {
-      clearTimeout(timer);
-      clearTimeout(nextPage);
-    };
+      // After 2s more (total 5s), navigate to '/home'.
+      setTimeout(() => navigate('/home'), 5000);
+    }, 4000);
+
+    // Cleanup on unmount to prevent memory leaks.
+    return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
@@ -40,11 +44,9 @@ function Intro() {
           />
         </div>
       ) : (
-        <div data-aos="flip-up" className="container">
-        <div data-aos="fade-right" className="container">
-          <h1 className="text-center text-4xl">Let the Worship Begin!</h1>
-        </div>
-        </div>
+    
+          <h1 data-aos="fade-right" className="container text-center text-4xl">Let the Worship Begin!</h1>
+
       )}
     </div>
   );
