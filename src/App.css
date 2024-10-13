@@ -13,13 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -35,16 +28,24 @@ body {
 
 .container {
   display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
   position: relative;
-  right: 100px;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
 }
 #worship {
   font-size: 85px;
   position: relative;
   left: 5vh;
-  top: 5vh;
+  bottom: 4vh;
 }
-
+#music_icon {
+  position: relative;
+  bottom: 4vh;
+}
 @media (max-width: 768px) {
   body {
     font-size: 14px;
@@ -59,25 +60,15 @@ body {
   }
   #worship {
     font-size: 35px;
-    top: -5px;
+    bottom: 5vh;
     left: 15px;
   }
   #music_icon {
     width: 40px;
     height: 50px;
-    bottom: 10px;
+    bottom: 5vh;
     left: 20px;
   }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-  .container {
-    right: 50px;
-    justify-content: center;
-  }
-
 }
 
 @keyframes logo-spin {
