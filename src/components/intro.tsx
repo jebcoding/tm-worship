@@ -12,8 +12,8 @@ function Intro() {
   useEffect(() => {
     AOS.init({ duration: 2000 });
 
-    const timer = setTimeout(() => setShowSecondScreen(true), 2000);
-    const nextPage = setTimeout(() => navigate('/home'), 3000);
+    const timer = setTimeout(() => setShowSecondScreen(true), 112000);
+    const nextPage = setTimeout(() => navigate('/home'), 311000);
 
     return () => {
       clearTimeout(timer);

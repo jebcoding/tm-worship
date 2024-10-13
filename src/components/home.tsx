@@ -9,11 +9,10 @@ function Home() {
   }, []);
   
   return (
-    <div 
-      data-aos="fade-up" 
-      className="home flex items-center justify-center w-screen h-screen bg-white"
-    >
+    <div className="home flex items-center justify-center w-screen h-screen bg-white">
+    <div data-aos="zoom-in" >
       <h1 className="text-4xl text-black font-bold">HOME</h1>
+    </div>
     </div>
   );
 }

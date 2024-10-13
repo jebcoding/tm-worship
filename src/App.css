@@ -70,6 +70,56 @@ body {
     left: 20px;
   }
 }
+/* Tablet View: 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 2rem;
+  }
+  #tmlogo {
+    width: 150px;
+    height: 150px;
+  }
+  #worship {
+    font-size: 50px;
+    bottom: 3vh;
+    left: 20px;
+  }
+  #music_icon {
+    width: 60px;
+    height: 70px;
+    bottom: 3vh;
+    left: 25px;
+  }
+}
+
+/* Desktop View: 1025px and above */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    padding: 3rem;
+    gap: 1.5rem;
+  }
+  #tmlogo {
+    width: 200px;
+    height: 200px;
+  }
+  #worship {
+    font-size: 85px;
+    bottom: 4vh;
+    left: 5vh;
+  }
+  #music_icon {
+    width: 80px;
+    height: 100px;
+    bottom: 4vh;
+    left: 30px;
+  }
+}
 
 @keyframes logo-spin {
   from {
