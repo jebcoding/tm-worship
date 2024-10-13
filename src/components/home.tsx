@@ -10,7 +10,7 @@ function Home() {
   
   return (
     <div 
-      data-aos="fade-right" 
+      data-aos="fade-up" 
       className="home flex items-center justify-center w-screen h-screen bg-white"
     >
       <h1 className="text-4xl text-black font-bold">HOME</h1>
