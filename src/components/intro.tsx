@@ -10,7 +10,7 @@ function Intro() {
 
   useEffect(() => {
 
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 1000 });
     AOS.refresh(); 
 
         const timer = setTimeout(() => {
