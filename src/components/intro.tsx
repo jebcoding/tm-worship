@@ -9,19 +9,17 @@ function Intro() {
   const [showSecondScreen, setShowSecondScreen] = useState(false);
 
   useEffect(() => {
-    // Initialize AOS once.
+
     AOS.init({ duration: 2000 });
     AOS.refresh(); 
 
-    // Set a single timer to manage both the second screen and navigation.
-    const timer = setTimeout(() => {
-      setShowSecondScreen(true); // Show the second screen after 3s.
+        const timer = setTimeout(() => {
+      setShowSecondScreen(true);
 
-      // After 2s more (total 5s), navigate to '/home'.
       setTimeout(() => navigate('/home'), 5000);
     }, 4000);
 
-    // Cleanup on unmount to prevent memory leaks.
+   
     return () => clearTimeout(timer);
   }, [navigate]);
 

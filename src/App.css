@@ -145,3 +145,39 @@ body {
 }
 
 /* HOME PAGE */
+
+
+/* Navbar */
+
+
+@media (max-width: 768px) {
+  .navi {
+    width: 100px;
+    padding: 15px;
+  }
+
+  .navi img {
+    height: 10vh;
+    width: 10vh;
+  }
+
+  .navi ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navi {
+    width: 150px;
+  }
+
+  .navi img {
+    height: 8vh;
+    width: 8vh;
+  }
+
+  .navi ul li a {
+    font-size: 0.8rem;
+  }
+}
+

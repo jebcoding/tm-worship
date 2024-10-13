@@ -1,4 +1,6 @@
+// Home.js
 import { useEffect } from 'react';
+import Sidebar from './sidebar'; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
@@ -9,10 +11,12 @@ function Home() {
   }, []);
   
   return (
-    <div className="home flex items-center justify-center w-screen h-screen bg-white">
-    <div data-aos="zoom-in" >
-      <h1 className="text-4xl text-black font-bold">HOME</h1>
-    </div>
+    <div className="flex">
+      <Sidebar />
+      <main className="ml-64 flex items-center justify-center w-full h-screen bg-white"> {/* Adjust margin-left to sidebar width */}
+        <div data-aos="zoom-in">
+        </div>
+      </main>
     </div>
   );
 }
