@@ -24,9 +24,9 @@ function Intro() {
   }, [navigate]);
 
   return (
-    <div>
+    <div className='w-full h-screen bg-[#242424]'>
       {!showSecondScreen ? (
-        <div data-aos="flip-up" className="container">
+        <div data-aos="flip-up" className="container ">
           <img
             src="/tm logo.png"
             alt="TM Logo"

@@ -16,6 +16,7 @@ li {
   position: relative;
   left: 20px;
 }
+/* Search */
 
 /* Medium Screens (Tablets) */
 @media (max-width: 968px) {
