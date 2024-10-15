@@ -6,7 +6,7 @@
 }
 
 li {
-  font-size: 20px;
+  font-size: 17px;
   padding-left: 20px;
 }
 
@@ -17,7 +17,16 @@ li {
   left: 20px;
 }
 /* Search */
-
+.search {
+  width: 90%;
+}
+/* Main */
+.main {
+  background-color: #D9D9D9;
+  width: 90%;
+  height: 80%;
+ 
+}
 /* Medium Screens (Tablets) */
 @media (max-width: 968px) {
   .navi {
@@ -39,23 +48,32 @@ li {
 /* Small Screens (Mobile) */
 @media (max-width: 480px) {
   .navi {
-      width: 110px;
+      width: 70px;
       padding: 40px 20px;
   }
 
   .navi img {
       height: 7vh;
       width: 7vh;
-      left: 1px;
+      position: fixed;
+      margin-left: 3px;
   }
 
   ul li {
-      margin-left: -2vh;
-      
+      margin-left: -4vh;
+      margin-top: 20px;
   }
 
   ul li a {
       font-size: 0.8rem;
   }
+  .main {
+    width: 86%;
+    height: 80%;
+   
+  }
+  .search {
+    width: 86%;
+  } 
 }
 
