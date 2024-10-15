@@ -1,30 +1,24 @@
-
-/* sidebar */
-.navi {
-    width: 200px;
-    background-color: #000000;
-    padding: 4vh;
-  }
-li {
-    font-size: 20px;
-    padding-left: 20px;
-}
-  /* Sidebar */
+/* Sidebar */
 .navi {
   width: 200px;
   background-color: #000000;
   padding: 4vh;
 }
 
-
 li {
   font-size: 20px;
   padding-left: 20px;
 }
 
+.navi img {
+  height: 10vh;
+  width: 10vh;
+}
+
 /* Medium Screens (Tablets) */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .navi {
+      width: 250px;
       padding: 50px 20px;
   }
 
@@ -34,8 +28,7 @@ li {
   }
 
   ul li {
-      font-size: 9px;
-      margin-left: -2vh;
+      font-size: 1.5em;
   }
 }
 
@@ -51,7 +44,29 @@ li {
       width: 7vh;
   }
 
+  ul li {
+      margin-left: -2vh;
+  }
+
   ul li a {
       font-size: 0.8rem;
+  }
+}
+
+/* Desktop Screens (Large Screens) */
+@media (min-width: 1024px) {
+  .navi {
+      width: 300px;
+      padding: 6vh 3vh;
+  }
+
+  .navi img {
+      height: 12vh;
+      width: 12vh;
+  }
+
+  ul li {
+      font-size: 22px;
+      padding-left: 25px;
   }
 }

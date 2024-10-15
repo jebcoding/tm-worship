@@ -7,7 +7,7 @@ const Sidebar = () => {
       <img
         src="/tm logo.png"
         alt="TM Logo"
-        className="h-[15vh] w-[15vh]"
+      
       />
       <ul className="space-y-9 relative top-[10vh]">
         <li>
