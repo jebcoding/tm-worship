@@ -55,7 +55,7 @@ li {
   .navi img {
       height: 7vh;
       width: 7vh;
-      position: fixed;
+      position: absolute;
       margin-left: 3px;
   }
 
