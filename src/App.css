@@ -1,17 +1,9 @@
 /* INTRO PAGE */
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
 }
 .logo {
   height: 6em;
@@ -136,48 +128,5 @@ body {
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 /* HOME PAGE */
-
-
-/* Navbar */
-
-
-@media (max-width: 768px) {
-  .navi {
-    width: 100px;
-    padding: 15px;
-  }
-
-  .navi img {
-    height: 10vh;
-    width: 10vh;
-  }
-
-  .navi ul li a {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navi {
-    width: 150px;
-  }
-
-  .navi img {
-    height: 8vh;
-    width: 8vh;
-  }
-
-  .navi ul li a {
-    font-size: 0.8rem;
-  }
-}
 

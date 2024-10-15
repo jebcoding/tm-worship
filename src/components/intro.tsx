@@ -16,8 +16,8 @@ function Intro() {
         const timer = setTimeout(() => {
       setShowSecondScreen(true);
 
-      setTimeout(() => navigate('/home'), 5000);
-    }, 4000);
+      setTimeout(() => navigate('/home'), 3000);
+    }, 3000);
 
    
     return () => clearTimeout(timer);

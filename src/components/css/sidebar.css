@@ -1,0 +1,57 @@
+
+/* sidebar */
+.navi {
+    width: 200px;
+    background-color: #000000;
+    padding: 4vh;
+  }
+li {
+    font-size: 20px;
+    padding-left: 20px;
+}
+  /* Sidebar */
+.navi {
+  width: 200px;
+  background-color: #000000;
+  padding: 4vh;
+}
+
+
+li {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .navi {
+      padding: 50px 20px;
+  }
+
+  .navi img {
+      height: 10vh;
+      width: 10vh;
+  }
+
+  ul li {
+      font-size: 9px;
+      margin-left: -2vh;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .navi {
+      width: 110px;
+      padding: 40px 20px;
+  }
+
+  .navi img {
+      height: 7vh;
+      width: 7vh;
+  }
+
+  ul li a {
+      font-size: 0.8rem;
+  }
+}

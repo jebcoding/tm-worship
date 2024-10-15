@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import '../App.css';
+import './css/sidebar.css';
 
 const Sidebar = () => {
   return (
-    <nav className="navi h-screen text-white p-5 fixed left-[5vh]">
+    <nav className="navi h-screen text-white relative ">
       <img
         src="/tm logo.png"
         alt="TM Logo"
