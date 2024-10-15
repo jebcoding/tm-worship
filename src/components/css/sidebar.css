@@ -13,6 +13,8 @@ li {
 .navi img {
   height: 10vh;
   width: 10vh;
+  position: relative;
+  left: 20px;
 }
 
 /* Medium Screens (Tablets) */
@@ -25,6 +27,7 @@ li {
   .navi img {
       height: 10vh;
       width: 10vh;
+      left: 5px;
   }
 
   ul li {
@@ -42,6 +45,7 @@ li {
   .navi img {
       height: 7vh;
       width: 7vh;
+      left: 1px;
   }
 
   ul li {
@@ -53,20 +57,3 @@ li {
   }
 }
 
-/* Desktop Screens (Large Screens) */
-@media (min-width: 1024px) {
-  .navi {
-      width: 300px;
-      padding: 6vh 3vh;
-  }
-
-  .navi img {
-      height: 12vh;
-      width: 12vh;
-  }
-
-  ul li {
-      font-size: 22px;
-      padding-left: 25px;
-  }
-}
