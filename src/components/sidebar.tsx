@@ -4,11 +4,17 @@ import './css/content.css';
 const Sidebar = () => {
   return (
     <nav className="navi h-screen text-white relative ">
-      <img
-        src="/tm logo.png"
-        alt="TM Logo"
-      
-      />
+     <a 
+        href="https://www.facebook.com/TimothyClassPH?mibextid=ZbWKwL" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/tm logo.png"
+          alt="TM Logo"
+          className="cursor-pointer"
+        />
+      </a>
       <ul className="space-y-9 relative top-[10vh]">
         <li>
           <Link to="/home" className="hover:text-blue-400">Home</Link>

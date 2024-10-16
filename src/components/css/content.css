@@ -3,78 +3,81 @@
   width: 200px;
   background-color: #000000;
   padding: 4vh;
-}
-
-li {
-  font-size: 17px;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
 }
 
 .navi img {
   height: 10vh;
   width: 10vh;
-  position: relative;
-  left: 20px;
+  margin-bottom: 20px; /* Optional spacing below the image */
 }
+
+/* List items */
+li {
+  font-size: 17px;
+  padding-left: 20px;
+}
+
 /* Search */
 .search {
   width: 90%;
 }
+
 /* Main */
 .main {
   background-color: #D9D9D9;
   width: 90%;
   height: 80%;
- 
 }
+
 /* Medium Screens (Tablets) */
 @media (max-width: 968px) {
   .navi {
-      width: 250px;
-      padding: 50px 20px;
+    width: 250px;
+    padding: 50px 20px;
   }
 
   .navi img {
-      height: 10vh;
-      width: 10vh;
-      left: 5px;
+    height: 10vh;
+    width: 10vh;
   }
 
   ul li {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 }
 
 /* Small Screens (Mobile) */
 @media (max-width: 480px) {
   .navi {
-      width: 70px;
-      padding: 40px 20px;
+    width: 70px;
+    padding: 40px 10px;
   }
 
   .navi img {
-      height: 7vh;
-      width: 7vh;
-      position: absolute;
-      margin-left: 3px;
+    height: 7vh;
+    width: 7vh;
   }
 
   ul li {
-      margin-left: -4vh;
-      margin-top: 20px;
+    margin-left: -1.5vh;
+    margin-top: 20px;
   }
 
   ul li a {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
   }
+
   .main {
     width: 86%;
     height: 80%;
-   
   }
+
   .search {
     width: 86%;
-  } 
+  }
 }
 
 /* Larger Screens (Desktops & Monitors) */
@@ -83,22 +86,24 @@ li {
     width: 300px;
     padding: 6vh 30px;
   }
+
   .navi img {
     height: 10vh;
     width: 10vh;
-    left: 10px;
   }
+
   li {
     font-size: 2.5rem;
     padding-left: 30px;
   }
+
   .main {
     width: 85%;
     height: 85%;
     margin-top: 50px;
   }
+
   .search {
     width: 85%;
-
   }
 }
