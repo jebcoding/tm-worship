@@ -16,7 +16,7 @@ function Intro() {
         const timer = setTimeout(() => {
       setShowSecondScreen(true);
 
-      setTimeout(() => navigate('/home'), 3000);
+      setTimeout(() => navigate('/home'), 31000);
     }, 3000);
 
    
@@ -43,7 +43,7 @@ function Intro() {
         </div>
       ) : (
     
-          <h1 data-aos="fade-right" className="container text-center text-4xl">Let the Worship Begin!</h1>
+          <h1 data-aos="fade-right" id='let' className="container text-center text-4xl">Let the Worship Begin!</h1>
 
       )}
     </div>

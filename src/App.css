@@ -88,7 +88,7 @@ body {
 }
 
 /* Desktop View: 1025px and above */
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   body {
     font-size: 18px;
   }
@@ -97,19 +97,22 @@ body {
     gap: 1.5rem;
   }
   #tmlogo {
-    width: 200px;
-    height: 200px;
+    width: 30vh;
+    height: 30vh;
   }
   #worship {
-    font-size: 85px;
-    bottom: 4vh;
-    left: 5vh;
+    font-size: 20em;
+
   }
   #music_icon {
-    width: 80px;
-    height: 100px;
-    bottom: 4vh;
-    left: 30px;
+    width: 20vh;
+    height: 20vh;
+
+
+
+  }
+  #let {
+    font-size: 7em;
   }
 }
 
