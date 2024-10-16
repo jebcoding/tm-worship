@@ -6,7 +6,7 @@ function Tab() {
     
 const [activeTab, setTab] = useState('tplaylist');
   return (
-    <div className='tabs flex justify-around w-full bg-[#434141] rounded-t-[20px] '>
+    <div className='tabs flex justify-around w-full bg-[#434141] rounded-t-[10px] '>
         <button 
             onClick={() => setTab('tplaylist')}
                 className={`but px-4 text-[2vh] rounded-lg ${activeTab === 'tplaylist' ? 'text-blue-200' : ''}`}
