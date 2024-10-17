@@ -7,7 +7,6 @@ export default function Artists() {
         <div className="w-10 h-10 bg-black rounded-full"></div>
         <div className="w-10 h-10 bg-black rounded-full"></div>
         <div className="w-10 h-10 bg-black rounded-full"></div>
-        <div className="w-10 h-10 bg-black rounded-full"></div>
       </div>
     </div>
   );
