@@ -5,6 +5,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import '../App.css'
 import Tab from './tab'
+import SongList from './songlist'
+import Artists from './artists'
 
 function Home() {
   useEffect(() => {
@@ -18,8 +20,11 @@ function Home() {
         <Search />
         <div className='main relative rounded-[10px] left-[20px] top-10 shadow-md   '>
           <Tab />
+          <Artists />
+          <SongList /> 
+
         </div>
-        
+
       </main>
     </div>
   );
