@@ -24,7 +24,7 @@ const songs = [
                   <p className="text-xs sm:text-sm text-gray-500">{song.artist}</p>
                 </div>
               </div>
-              <p className="text-xs sm:text-sm text-gray-500 ml-3 sm:ml-10 whitespace-nowrap">
+              <p className="text-xs sm:text-sm text-gray-500 ml-3 sm: relative top-3 right-6">
                 {song.duration}
               </p>
             </div>
