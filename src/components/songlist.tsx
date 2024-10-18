@@ -6,7 +6,7 @@ const songs = [
   export default function SongList() {
     return (
       <div className="mt-2 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-lg sm:text-xl font-semibold mb-3 text-black">
+        <h2 className="text-lg sm:text-xl font-semibold mb-3 ml-[-1vh] text-black">
           Worship Songs
         </h2>
         <div className="space-y-3">
