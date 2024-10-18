@@ -14,7 +14,6 @@
   margin-bottom: 20px; 
 }
 
-
 li {
   font-size: 17px;
   padding-left: 20px;
@@ -31,7 +30,8 @@ li {
   width: 90%;
   height: 80%;
 }
-/* tabs */
+
+/* Tabs */
 .custom-hr {
   background-color: white;
   width: 3px;
@@ -57,6 +57,21 @@ li {
 
   ul li {
     font-size: 1.5em;
+    padding-left: 30px; 
+  }
+
+  .main {
+    width: 95%;
+    height: 80%;
+    margin-top: 30px;
+  }
+
+  .search {
+    width: 95%;
+  }
+
+  .tabs {
+    height: 8vh;
   }
 }
 
@@ -89,10 +104,12 @@ li {
   .search {
     width: 86%;
   }
+
   .tabs {
     padding-bottom: 1px;
     height: 7vh;
   }
+
   .buts {
     font-size: 16px;
   }
@@ -116,12 +133,13 @@ li {
   }
 
   .main {
-    width: 85%;
-    height: 85%;
+    width: 95%;
+    height: 80%;
     margin-top: 50px;
   }
 
   .search {
-    width: 85%;
+    width: 95%;
+    font-size: 20px;
   }
 }

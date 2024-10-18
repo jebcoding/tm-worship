@@ -90,7 +90,7 @@ body {
 /* Desktop View: 1025px and above */
 @media (min-width: 1200px) {
   body {
-    font-size: 18px;
+    font-size: 11px;
   }
   .container {
     padding: 3rem;

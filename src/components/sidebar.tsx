@@ -20,12 +20,12 @@ const Sidebar = () => {
           <Link to="/home" className="hover:text-blue-400">Home</Link>
         </li>
         <li>
-        <Link to="/about" className="hover:text-blue-400 transition-colors">
+        <Link to="/worship_songs" className="hover:text-blue-400 transition-colors">
             <span className="block leading-tight">Worship Songs</span>
           </Link>
         </li>
         <li>
-          <Link to="/services" className="hover:text-blue-400">Artists</Link>
+          <Link to="/artists" className="hover:text-blue-400">Artists</Link>
         </li>
       </ul>
     </nav>
