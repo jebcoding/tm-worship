@@ -22,7 +22,7 @@ const SongList: React.FC<SongListProps> = ({ maxHeight }) => {
   return (
     <div className="song-list-container">
       <h2 className="song-list-title">Worship Songs</h2>
-      <div className="song-list" style={{ maxHeight: maxHeight, overflowY: 'auto' }}>
+      <div className={`song-list ${maxHeight ? 'max-height' : ''}`} style={{ maxHeight: maxHeight, overflowY: 'auto' }}>
         {songs.map((song) => (
           <div key={song.title} className="song-item">
             <div className="song-info">

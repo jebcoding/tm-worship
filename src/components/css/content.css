@@ -1,4 +1,3 @@
-
 /* Sidebar */
 .navi {
   width: 200px;
@@ -65,7 +64,7 @@ li {
 }
 
 .max-height {
-  max-height: 500px;
+  max-height: 30vh; /* Use a percentage of the viewport height */
 }
 
 .song-item {
@@ -119,7 +118,6 @@ li {
   right: 1.5rem;
 }
 
-
 .song-list::-webkit-scrollbar {
   width: 10px; 
 }
@@ -171,6 +169,10 @@ li {
   .tabs {
     height: 8vh;
   }
+
+  .max-height {
+    max-height: 40vh; /* Adjust for larger screens */
+  }
 }
 
 @media (max-width: 968px) {
@@ -193,8 +195,13 @@ li {
   .song-duration {
     font-size: 0.6rem;
   }
+
+  .max-height {
+    max-height: 45vh; /* Further adjust for medium screens */
+  }
 }
-/* mobile */
+
+/* Mobile */
 @media (max-width: 468px) {
   .navi {
     width: 70px;
@@ -218,7 +225,6 @@ li {
   .main {
     width: 86%;
     height: 85%;
-    
   }
 
   .search {
@@ -254,9 +260,11 @@ li {
   .song-duration {
     font-size: 0.5rem;
   }
+  
   .max-height {
-    max-height: 350px;
+    max-height: 50vh; /* Adjust for mobile screens */
   }
+
   .song-list::-webkit-scrollbar {
     width: 1px; 
   }
@@ -265,7 +273,6 @@ li {
     scrollbar-width: thin; 
     scrollbar-color: #888 #f1f1f1; 
   }
-  
 }
 
 /* Larger Screens (Desktops & Monitors) */
