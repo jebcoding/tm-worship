@@ -207,7 +207,7 @@ li {
   }
 
   ul li {
-    margin-left: -3vh;
+    margin-left: -2vh;
     margin-top: 20px;
   }
 
@@ -217,7 +217,8 @@ li {
 
   .main {
     width: 86%;
-    height: 86%;
+    height: 60%;
+    
   }
 
   .search {
