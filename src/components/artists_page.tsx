@@ -1,7 +1,6 @@
 import Sidebar from './sidebar'
 import Search from './search'
-import 'aos/dist/aos.css'
-import '../App.css'
+import './css/content.css'
 import Tab from './tab'
 import Artists from './artists'
 
@@ -12,7 +11,7 @@ function artists_page() {
     <Sidebar />
     <main className="flex-1 relative">
       <Search />
-      <div className='main relative rounded-[10px] left-[20px] top-10 shadow-md   '>
+      <div className='main absolute rounded-[10px] left-[20px] top-10 shadow-md   '>
         <Tab /><br />
         <Artists /> 
 

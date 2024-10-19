@@ -1,3 +1,12 @@
+// SongList.js
+
+import React from 'react';
+import './css/content.css';
+
+interface SongListProps {
+  maxHeight?: string; // Allow maxHeight to be a string
+}
+
 const songs = [
   { title: 'Good Good Father', artist: 'Chris Tomlin', duration: '2:30' },
   { title: 'How Great is Our God', artist: 'Chris Tomlin', duration: '3:20' },
@@ -9,17 +18,15 @@ const songs = [
   { title: 'What A Beautiful Name', artist: 'Hillsong Worship', duration: '4:00' },
 ];
 
-export default function SongList({ maxHeight }) {
+const SongList: React.FC<SongListProps> = ({ maxHeight }) => {
   return (
     <div className="song-list-container">
       <h2 className="song-list-title">Worship Songs</h2>
-
-      {/* Scrollable song list container */}
-      <div className={`song-list ${maxHeight ? 'max-height' : ''}`}>
-        {songs.map((song, index) => (
-          <div key={index} className="song-item">
+      <div className="song-list" style={{ maxHeight: maxHeight, overflowY: 'auto' }}>
+        {songs.map((song) => (
+          <div key={song.title} className="song-item">
             <div className="song-info">
-              <div className="song-icon"></div>
+              <div className="song-icon"></div> {/* Add an icon here if needed */}
               <div className="song-details">
                 <p className="song-title">{song.title}</p>
                 <p className="song-artist">{song.artist}</p>
@@ -31,4 +38,6 @@ export default function SongList({ maxHeight }) {
       </div>
     </div>
   );
-}
+};
+
+export default SongList;
