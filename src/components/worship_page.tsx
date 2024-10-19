@@ -10,7 +10,7 @@ function WorshipPage() {
       <Sidebar />
       <main className="flex-1 relative">
         <Search />
-        <div className="main absolute rounded-[10px] left-[20px] top-10 shadow-md pb-[50vh]">
+        <div className="main absolute rounded-[10px] left-[20px] top-[5vh] shadow-md pb-[50vh]">
           <Tab /><br />
           <SongList maxHeight="450px" /> {/* Shows more songs */}
         </div>
