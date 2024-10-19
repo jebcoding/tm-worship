@@ -1,7 +1,5 @@
-import { useEffect } from 'react'
 import Sidebar from './sidebar'
 import Search from './search'
-import AOS from 'aos'
 import 'aos/dist/aos.css'
 import '../App.css'
 import Tab from './tab'
