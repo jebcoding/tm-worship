@@ -1,3 +1,4 @@
+
 /* Sidebar */
 .navi {
   width: 200px;
@@ -37,27 +38,124 @@ li {
   width: 3px;
   height: 100%;
   border: none;
-  margin: 0; /* Optional: Remove default margin */
+  margin: 0;
 }
+
 .tabs {
   height: 8vh;
 }
 
-/* Medium Screens (Tablets) */
-@media (max-width: 968px) {
+.song-list-container {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+}
+
+.song-list-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: black;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+}
+
+.max-height {
+  max-height: 500px;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.75rem;
+}
+
+.song-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.song-details {
+  flex: 1;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-artist {
+  font-size: 15px;
+  color: gray;
+}
+
+.song-duration {
+  font-size: 17px;
+  color: gray;
+  margin-left: 0.75rem;
+  position: relative;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+
+.song-list::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.song-list::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px; 
+}
+
+.song-list::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px; 
+}
+
+.song-list::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white; 
+  border-radius: 4px; 
+  padding: 0.75rem; 
+  transition: background-color 0.2s; 
+}
+
+.song-item:hover {
+  background-color: #e0e0e0; 
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
   .navi {
     width: 250px;
     padding: 50px 20px;
-  }
-
-  .navi img {
-    height: 10vh;
-    width: 10vh;
-  }
-
-  ul li {
-    font-size: 1.5em;
-    padding-left: 30px; 
   }
 
   .main {
@@ -75,13 +173,34 @@ li {
   }
 }
 
-/* Small Screens (Mobile) */
-@media (max-width: 480px) {
+@media (max-width: 968px) {
+  .song-list-title {
+    font-size: 1em;
+  }
+
+  .song-item {
+    padding: 0.5rem;
+  }
+
+  .song-title {
+    font-size: 0.8rem;
+  }
+
+  .song-artist {
+    font-size: 0.6rem;
+  }
+
+  .song-duration {
+    font-size: 0.6rem;
+  }
+}
+/* mobile */
+@media (max-width: 468px) {
   .navi {
     width: 70px;
     padding: 40px 10px;
   }
-
+  
   .navi img {
     height: 7vh;
     width: 7vh;
@@ -98,12 +217,11 @@ li {
 
   .main {
     width: 86%;
-    height: 80%;
+    height: 86%;
   }
 
   .search {
     width: 86%;
-    
   }
 
   .tabs {
@@ -114,6 +232,39 @@ li {
   .buts {
     font-size: 16px;
   }
+
+  .song-list-title {
+    font-size: 0.8em;
+  }
+
+  .song-item {
+    padding: 0.5rem;
+    margin-bottom: 1px;
+  }
+
+  .song-title {
+    font-size: 0.7rem;
+  }
+
+  .song-artist {
+    font-size: 0.5rem;
+  }
+
+  .song-duration {
+    font-size: 0.5rem;
+  }
+  .max-height {
+    max-height: 350px;
+  }
+  .song-list::-webkit-scrollbar {
+    width: 1px; 
+  }
+
+  .song-list {
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
+  }
+  
 }
 
 /* Larger Screens (Desktops & Monitors) */

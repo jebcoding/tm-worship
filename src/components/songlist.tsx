@@ -1,36 +1,34 @@
 const songs = [
-    { title: 'Good Good Father', artist: 'Chris Tomlin', duration: '2:30' },
-    { title: 'Good Good Father', artist: 'Chris Tomlin', duration: '2:30' },
-  ];
-  
-  export default function SongList() {
-    return (
-      <div className="mt-2 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-lg sm:text-xl font-semibold mb-3 ml-[-1vh] text-black">
-          Worship Songs
-        </h2>
-        <div className="space-y-3">
-          {songs.map((song, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-between bg-white shadow-md rounded-lg p-3 sm:p-4"
-            >
-              <div className="flex items-center w-full space-x-3">
-                <div className="w-8 sm:w-10 h-8 sm:h-10 bg-black rounded-full"></div>
-                <div className="flex-1">
-                  <p className="text-sm sm:text-base font-medium text-black truncate">
-                    {song.title}
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500">{song.artist}</p>
-                </div>
+  { title: 'Good Good Father', artist: 'Chris Tomlin', duration: '2:30' },
+  { title: 'How Great is Our God', artist: 'Chris Tomlin', duration: '3:20' },
+  { title: 'Way Maker', artist: 'Sinach', duration: '4:05' },
+  { title: 'Oceans', artist: 'Hillsong United', duration: '3:55' },
+  { title: '10,000 Reasons', artist: 'Matt Redman', duration: '4:40' },
+  { title: 'Reckless Love', artist: 'Cory Asbury', duration: '5:15' },
+  { title: 'Amazing Grace', artist: 'Chris Tomlin', duration: '3:30' },
+  { title: 'What A Beautiful Name', artist: 'Hillsong Worship', duration: '4:00' },
+];
+
+export default function SongList({ maxHeight }) {
+  return (
+    <div className="song-list-container">
+      <h2 className="song-list-title">Worship Songs</h2>
+
+      {/* Scrollable song list container */}
+      <div className={`song-list ${maxHeight ? 'max-height' : ''}`}>
+        {songs.map((song, index) => (
+          <div key={index} className="song-item">
+            <div className="song-info">
+              <div className="song-icon"></div>
+              <div className="song-details">
+                <p className="song-title">{song.title}</p>
+                <p className="song-artist">{song.artist}</p>
               </div>
-              <p className="text-xs sm:text-sm text-gray-500 ml-3 sm: relative top-3 right-6">
-                {song.duration}
-              </p>
             </div>
-          ))}
-        </div>
+            <p className="song-duration">{song.duration}</p>
+          </div>
+        ))}
       </div>
-    );
-  }
-  
+    </div>
+  );
+}
