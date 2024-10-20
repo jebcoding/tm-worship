@@ -198,6 +198,12 @@ li {
 .arrow-right {
   right: 8px;
 }
+.title-name {
+  position: relative;
+  top: 50px;
+  color: black;
+  left: 1vh;
+}
 
 /* Responsive Adjustments */
 @media (min-width: 600px) {
