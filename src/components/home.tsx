@@ -15,7 +15,7 @@ function Home() {
         <div className="main absolute rounded-[10px] left-[20px] top-[5vh] shadow-md ">
           <Tab />
           <Artists />
-          <SongList maxHeight="260px" /> {/* Shows fewer songs */}
+          <SongList maxHeight="330px" /> 
         </div>
       </main>
     </div>

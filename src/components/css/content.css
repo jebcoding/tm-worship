@@ -64,7 +64,7 @@ li {
 }
 
 .max-height {
-  max-height: 30vh; /* Use a percentage of the viewport height */
+  max-height: 10vh; /* Use a percentage of the viewport height */
 }
 
 .song-item {
@@ -148,6 +148,67 @@ li {
 .song-item:hover {
   background-color: #e0e0e0; 
 }
+/* artist */
+.artists-wrapper {
+  position: relative;
+  width: 100%; /* Take full width initially */
+  max-width: 900px; /* Limit maximum width */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.artist-container {
+  display: flex;
+  gap: 12px;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 16px 0;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.artist-item {
+  min-width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* Arrow Styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.arrow-left {
+  left: 8px;
+}
+
+.arrow-right {
+  right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 900px) {
+  .artists-wrapper {
+    max-width: 800px;
+  }
+}
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
@@ -171,7 +232,7 @@ li {
   }
 
   .max-height {
-    max-height: 40vh; /* Adjust for larger screens */
+    max-height: 50vh; /* Adjust for larger screens */
   }
 }
 
@@ -197,7 +258,7 @@ li {
   }
 
   .max-height {
-    max-height: 45vh; /* Further adjust for medium screens */
+    max-height: 95vh; /* Further adjust for medium screens */
   }
 }
 
@@ -262,7 +323,7 @@ li {
   }
   
   .max-height {
-    max-height: 50vh; /* Adjust for mobile screens */
+    max-height: 100px; /* Adjust for mobile screens */
   }
 
   .song-list::-webkit-scrollbar {
@@ -272,6 +333,9 @@ li {
   .song-list {
     scrollbar-width: thin; 
     scrollbar-color: #888 #f1f1f1; 
+  }
+  .artists-wrapper {
+    max-width: 600px;
   }
 }
 

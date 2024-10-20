@@ -1,6 +1,6 @@
 import Sidebar from './sidebar'
 import Search from './search'
-import './css/content.css'
+import './css/artist.css'
 import Tab from './tab'
 import Artists from './artists'
 
@@ -11,7 +11,7 @@ function artists_page() {
     <Sidebar />
     <main className="flex-1 relative">
       <Search />
-      <div className='main absolute rounded-[10px] left-[20px] top-10 shadow-md   '>
+      <div className='main absolute rounded-[10px] left-[20px] top-[5vh] shadow-md   '>
         <Tab /><br />
         <Artists /> 
 
