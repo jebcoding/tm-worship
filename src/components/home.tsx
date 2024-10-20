@@ -1,7 +1,7 @@
 import Sidebar from './sidebar'
 import Search from './search'
 import 'aos/dist/aos.css'
-import '../App.css'
+import './css/content.css'
 import Tab from './tab'
 import Artists from './artists'
 import SongList from './songlist';
