@@ -12,10 +12,10 @@ function Home() {
       <Sidebar />
       <main className="flex-1 relative">
         <Search />
-        <div className="main absolute rounded-[10px] left-[20px] top-[5vh] shadow-md ">
+        <div className="main absolute rounded-[10px] left-[20px] shadow-md ">
           <Tab />
           <Artists />
-          <SongList maxHeight="330px" /> 
+          <SongList maxHeight="280px" /> 
         </div>
       </main>
     </div>

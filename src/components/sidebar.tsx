@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './css/content.css';
 
+
 const Sidebar = () => {
   return (
     <nav className="navi h-screen text-white relative ">
@@ -10,7 +11,7 @@ const Sidebar = () => {
         rel="noopener noreferrer"
       >
         <img
-          src="/tm logo.png"
+          src="./images/tm logo.png"
           alt="TM Logo"
           className="cursor-pointer"
         />

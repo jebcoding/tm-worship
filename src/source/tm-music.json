@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Chris Tomlin",
+        "profile": "img.jpg",
+        "artists-songs": [
+            {
+                "title": "At the Cross",
+                "song": "hello.mp3"
+            },
+            {
+                "title": "Good Good Father",
+                "song": "goodfather.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Hillsong",
+        "profile": "hillsong.jpg",
+        "artists-songs": [
+            {
+                "title": "Oceans",
+                "song": "oceans.mp3"
+            },
+            {
+                "title": "What a Beautiful Name",
+                "song": "beautifulname.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Elevation Worship",
+        "profile": "elevation.jpg",
+        "artists-songs": [
+            {
+                "title": "O Come to the Altar",
+                "song": "altar.mp3"
+            },
+            {
+                "title": "Graves into Gardens",
+                "song": "graves.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Bethel Music",
+        "profile": "bethel.jpg",
+        "artists-songs": [
+            {
+                "title": "Reckless Love",
+                "song": "recklesslove.mp3"
+            },
+            {
+                "title": "Goodness of God",
+                "song": "goodness.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Casting Crowns",
+        "profile": "castingcrowns.jpg",
+        "artists-songs": [
+            {
+                "title": "Who Am I",
+                "song": "whoami.mp3"
+            },
+            {
+                "title": "Praise You In This Storm",
+                "song": "praise.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Planetshakers",
+        "profile": "planetshakers.jpg",
+        "artists-songs": [
+            {
+                "title": "The Anthem",
+                "song": "anthem.mp3"
+            },
+            {
+                "title": "All I Need Is You",
+                "song": "allineed.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Maverick City Music",
+        "profile": "maverick.jpg",
+        "artists-songs": [
+            {
+                "title": "Jireh",
+                "song": "jireh.mp3"
+            },
+            {
+                "title": "Man of Your Word",
+                "song": "manofword.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Kari Jobe",
+        "profile": "kari.jpg",
+        "artists-songs": [
+            {
+                "title": "Forever",
+                "song": "forever.mp3"
+            },
+            {
+                "title": "The Blessing",
+                "song": "blessing.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Tasha Cobbs Leonard",
+        "profile": "tasha.jpg",
+        "artists-songs": [
+            {
+                "title": "Break Every Chain",
+                "song": "breakchain.mp3"
+            },
+            {
+                "title": "I'm Getting Ready",
+                "song": "gettingready.mp3"
+            }
+        ]      
+    },
+    {
+        "name": "Phil Wickham",
+        "profile": "phil.jpg",
+        "artists-songs": [
+            {
+                "title": "Living Hope",
+                "song": "livinghope.mp3"
+            },
+            {
+                "title": "This Is Amazing Grace",
+                "song": "amazinggrace.mp3"
+            }
+        ]      
+    }
+]
